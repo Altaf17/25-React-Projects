@@ -6,6 +6,7 @@ import LoadMore from "./Components/05-LoadMore/LoadMore";
 import menus from "./Components/06-TreeView/Data";
 import TreeView from "./Components/06-TreeView/TreeView";
 import QRCodeGenerator from "./Components/07-QRCodeGenerator/QRCodeGenerator";
+import ThemeChanger from "./Components/08-ThemeChanger/ThemeChanger";
 import "./styles.css";
 
 export default function App() {
@@ -17,7 +18,8 @@ export default function App() {
       {/* <Slider url={"https://picsum.photos/v2/list"} page={"1"} limit={"10"} /> */}
       {/* <LoadMore /> */}
       {/* <TreeView menus={menus} /> */}
-      <QRCodeGenerator />
+      {/* <QRCodeGenerator /> */}
+      <ThemeChanger />
     </div>
   );
 }
