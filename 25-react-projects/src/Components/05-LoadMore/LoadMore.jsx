@@ -26,7 +26,6 @@ const LoadMore = () => {
       setLoading(false);
     }
   };
-  console.log(products), "products";
 
   useEffect(() => {
     fetchProducts();

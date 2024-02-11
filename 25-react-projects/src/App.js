@@ -7,6 +7,7 @@ import menus from "./Components/06-TreeView/Data";
 import TreeView from "./Components/06-TreeView/TreeView";
 import QRCodeGenerator from "./Components/07-QRCodeGenerator/QRCodeGenerator";
 import ThemeChanger from "./Components/08-ThemeChanger/ThemeChanger";
+import ScrollIndicator from "./Components/09-Scroll-Indicator/ScrollIndicator";
 import "./styles.css";
 
 export default function App() {
@@ -19,7 +20,8 @@ export default function App() {
       {/* <LoadMore /> */}
       {/* <TreeView menus={menus} /> */}
       {/* <QRCodeGenerator /> */}
-      <ThemeChanger />
+      {/* <ThemeChanger /> */}
+      <ScrollIndicator url={`https://dummyjson.com/products?limit=100`} />
     </div>
   );
 }
