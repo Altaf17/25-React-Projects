@@ -8,20 +8,28 @@ import TreeView from "./Components/06-TreeView/TreeView";
 import QRCodeGenerator from "./Components/07-QRCodeGenerator/QRCodeGenerator";
 import ThemeChanger from "./Components/08-ThemeChanger/ThemeChanger";
 import ScrollIndicator from "./Components/09-Scroll-Indicator/ScrollIndicator";
+import TabsTest from "./Components/10-Custom-Tabs/TabsTest";
+import ModalTest from "./Components/11-Modal-Popup/ModalTest";
+import Profile from "./Components/12-Github-Profile/Profile";
 import "./styles.css";
 
 export default function App() {
   return (
-    <div className="App">
-      {/* <Accordian /> */}
-      {/* <RandomColors /> */}
-      {/* <StarRatings noOfStars={10} /> */}
-      {/* <Slider url={"https://picsum.photos/v2/list"} page={"1"} limit={"10"} /> */}
-      {/* <LoadMore /> */}
-      {/* <TreeView menus={menus} /> */}
-      {/* <QRCodeGenerator /> */}
-      {/* <ThemeChanger /> */}
-      <ScrollIndicator url={`https://dummyjson.com/products?limit=100`} />
-    </div>
+    <>
+      <div className="App">
+        {/* <Accordian /> */}
+        {/* <RandomColors /> */}
+        {/* <StarRatings noOfStars={10} /> */}
+        {/* <Slider url={"https://picsum.photos/v2/list"} page={"1"} limit={"10"} /> */}
+        {/* <LoadMore /> */}
+        {/* <TreeView menus={menus} /> */}
+        {/* <QRCodeGenerator /> */}
+        {/* <ThemeChanger /> */}
+        {/* <ScrollIndicator url={`https://dummyjson.com/products?limit=100`} /> */}
+        {/* <TabsTest /> */}
+        {/* <ModalTest /> */}
+        <Profile />
+      </div>
+    </>
   );
 }
