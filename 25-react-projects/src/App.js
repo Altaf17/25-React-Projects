@@ -28,6 +28,7 @@ export default function App() {
         {/* <ScrollIndicator url={`https://dummyjson.com/products?limit=100`} /> */}
         {/* <TabsTest /> */}
         {/* <ModalTest /> */}
+        {/* due to api its not working */}
         <Profile />
       </div>
     </>
