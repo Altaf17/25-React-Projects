@@ -2,23 +2,25 @@ import React, { useState, useEffect } from "react";
 import "./Profile.css";
 import { ProfileCard } from "./ProfileCard";
 const Profile = () => {
-  const [userName, setUserName] = useState("md altaf hussain");
+  const [userName, setUserName] = useState("");
   const [resData, setResData] = useState([]);
   const [loading, setLoading] = useState(false);
 
   const fetchData = async () => {
-    setLoading(true);
-    const response = await fetch(`https://api.github.com/users/${userName}`);
-    const jsonData = await response.json();
-    if (jsonData) {
-      setResData(jsonData);
+    try {
+      setLoading(true);
+      const response = await fetch(`https://api.github.com/users/${userName}`);
+      const jsonData = await response.json();
+      if (jsonData) {
+        setResData(jsonData);
+        setLoading(false);
+        setUserName("");
+      }
+    } catch (error) {
+      console.log(error);
     }
-    setLoading(false);
-    setUserName("");
   };
-
   console.log(resData);
-  // console.log(jsonData);
 
   useEffect(() => {
     fetchData();
