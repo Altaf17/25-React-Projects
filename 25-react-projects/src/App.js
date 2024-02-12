@@ -11,6 +11,7 @@ import ScrollIndicator from "./Components/09-Scroll-Indicator/ScrollIndicator";
 import TabsTest from "./Components/10-Custom-Tabs/TabsTest";
 import ModalTest from "./Components/11-Modal-Popup/ModalTest";
 import Profile from "./Components/12-Github-Profile/Profile";
+import Search from "./Components/13-Search-Auto-Complate/Search";
 import "./styles.css";
 
 export default function App() {
@@ -29,7 +30,8 @@ export default function App() {
         {/* <TabsTest /> */}
         {/* <ModalTest /> */}
         {/* due to api its not working */}
-        <Profile />
+        {/* <Profile /> */}
+        <Search />
       </div>
     </>
   );
