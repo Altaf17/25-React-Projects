@@ -13,6 +13,8 @@ import ModalTest from "./Components/11-Modal-Popup/ModalTest";
 import Profile from "./Components/12-Github-Profile/Profile";
 import Search from "./Components/13-Search-Auto-Complate/Search";
 import TicToc from "./Components/14-Tic-Toc-Game/TicToc";
+import FeatureFlags from "./Components/15-Feature-Flag/FeatureFlags";
+import FeatureFlagGlobalState from "./Components/15-Feature-Flag/context";
 import "./styles.css";
 
 export default function App() {
@@ -33,7 +35,10 @@ export default function App() {
         {/* due to api its not working */}
         {/* <Profile /> */}
         {/* <Search /> */}
-        <TicToc />
+        {/* <TicToc /> */}
+        <FeatureFlagGlobalState>
+          <FeatureFlags />
+        </FeatureFlagGlobalState>
       </div>
     </>
   );
