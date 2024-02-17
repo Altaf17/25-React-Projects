@@ -18,6 +18,9 @@ import FeatureFlagGlobalState from "./Components/15-Feature-Flag/context";
 import UseFetchHookTest from "./Components/16-UseFetch-custom-hook/UseFetchHookTest";
 import UseOutsideClickTest from "./Components/17-UseOutsideClick/UseOutsideClickTest";
 import UseResponsiveTest from "./Components/18-UseResponsive/UseResponsiveTest";
+import Scroll from "./Components/19-Scroll-TopButtom/Scroll";
+import ScrollToSection from "./Components/19-Scroll-TopButtom/ScrollToSection";
+import ScroolToSection from "./Components/19-Scroll-TopButtom/ScrollToSection";
 import "./styles.css";
 
 export default function App() {
@@ -44,7 +47,9 @@ export default function App() {
         </FeatureFlagGlobalState> */}
         {/* <UseFetchHookTest /> */}
         {/* <UseOutsideClickTest /> */}
-        <UseResponsiveTest />
+        {/* <UseResponsiveTest /> */}
+        {/* <Scroll /> */}
+        <ScrollToSection />
       </div>
     </>
   );
