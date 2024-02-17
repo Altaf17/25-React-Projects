@@ -15,6 +15,9 @@ import Search from "./Components/13-Search-Auto-Complate/Search";
 import TicToc from "./Components/14-Tic-Toc-Game/TicToc";
 import FeatureFlags from "./Components/15-Feature-Flag/FeatureFlags";
 import FeatureFlagGlobalState from "./Components/15-Feature-Flag/context";
+import UseFetchHookTest from "./Components/16-UseFetch-custom-hook/UseFetchHookTest";
+import UseOutsideClickTest from "./Components/17-UseOutsideClick/UseOutsideClickTest";
+import UseResponsiveTest from "./Components/18-UseResponsive/UseResponsiveTest";
 import "./styles.css";
 
 export default function App() {
@@ -36,9 +39,12 @@ export default function App() {
         {/* <Profile /> */}
         {/* <Search /> */}
         {/* <TicToc /> */}
-        <FeatureFlagGlobalState>
+        {/* <FeatureFlagGlobalState>
           <FeatureFlags />
-        </FeatureFlagGlobalState>
+        </FeatureFlagGlobalState> */}
+        {/* <UseFetchHookTest /> */}
+        {/* <UseOutsideClickTest /> */}
+        <UseResponsiveTest />
       </div>
     </>
   );
